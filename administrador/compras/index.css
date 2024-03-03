@@ -1,0 +1,330 @@
+
+
+/* General styles */
+body {
+  display: flex;
+  margin:  0;
+  padding:  0;
+  background-color: #f5f5f5; /* Light background color */
+  font-family: 'Arial', sans-serif;
+}
+
+/* Header styles */
+header {
+  width:  23%;
+  background-color: #f5f5f5; /* Light background color */
+  height:  100vh;
+  margin:  0;
+  box-shadow:  0  2px  4px rgba(0,  0,  0,  0.1); /* Soft shadow */
+}
+
+.barra {
+  width:   96%;
+  height:  8.5vh;
+  background-color: #f5f5f5; /* Light background color */
+  display: flex;
+  align-items: center;
+  padding:  0  20px;
+  box-shadow:  0  2px  4px rgba(0,  0,  0,  0.1); /* Soft shadow */
+}
+
+.header {
+  width:  100%;
+  height:  8vh;
+  margin:  0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: #000000; /* Dark text color */
+  justify-content: center;
+  height:  100%;
+  width:  100%;
+  font-size:  1.25em; /* Logo font size */
+  font-weight: bold; /* Bold for the logo */
+}
+
+/* Navigation styles */
+.puntos, .mas {
+  width:  99.2%;
+  height:  10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ 
+ 
+}
+.puntos:hover{
+  background-color: #000000; /* Dark background color on hover */
+  color: #ffffff; 
+}
+.puntos a, .mas a {
+  padding:  5px  25px;
+  text-decoration: none;
+  color: #000000; /* Dark text color */
+ 
+  width: 79%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.puntos a:hover, .mas a:hover {
+  background-color: #000000; /* Dark background color on hover */
+  color: #ffffff; /* White text color on hover */
+}
+
+/* Main content styles */
+.contenidos {
+  width:  100%;
+  height:  83vh;
+  margin:  50px  0;
+}
+
+main {
+  width:  80%;
+  height:  100vh;
+  margin: auto; /* Horizontally centered */
+}
+
+.main {
+  box-shadow:  0  4px  8px rgba(0,  0,  0,  0.1); /* Soft shadow */
+  margin:  50px  18px;
+  height:  70%;
+  border-radius:  10px;
+  background-color: #ffffff; /* White background color */
+  overflow-y: auto;
+}
+
+/* Table styles */
+table {
+  width:  100%;
+  border-collapse: collapse;
+  margin-bottom:  20px;
+}
+
+thead {
+  background-color: #f5f5f5; /* Light background color */
+  width:  100%;
+  padding:  20px;
+}
+
+th, td {
+  padding:  20px;
+  text-align: left;
+  border-bottom:  1px solid #ddd;
+}
+
+tr:hover {
+  background-color: #f5f5f5; /* Light background color on hover */
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index:  1;
+  left:  0;
+  top:  0;
+  width:  100%;
+  height:  100vh;
+  background-color: rgba(0,  0,  0,  0.4);
+}
+
+.modal-content {
+  background:url("../imagenes/blurry-gradient-haikei\ \(4\).svg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: auto;
+  padding:  20px;
+  border:  1px solid #888;
+  width:  70%;
+  height:  70vh;
+  color: #ffffff;
+
+}
+
+.close {
+  color: #ffffff; /* Dark text color */
+  float: right;
+  font-size:  28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color  0.3s; /* Smooth transition */
+}
+
+.close:hover,
+.close:focus {
+  color: #333; /* Dark gray text color on hover */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Input and button styles */
+.busquedaYAgregar {
+  margin:  30px  18px;
+  height:  5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+}
+
+.input {
+  width:  70%; /* Wider width */
+  height:  90%;
+  border-radius:  5px;
+  outline: none;
+  border:  1px solid #ced4da; /* Light gray border color */
+  box-shadow: none; /* No shadow */
+  padding:  5px; /* Inner spacing */
+}
+
+.button {
+  width:  20%;
+  height:  100%;
+  outline: none;
+  border-radius:  5px;
+  border:  1px solid #ced4da; /* Light gray border color */
+  box-shadow: none; /* No shadow */
+  color: #ffffff; /* White text color */
+  background-color: #000000; /* Black background color */
+  cursor: pointer;
+  transition: background-color  0.3s; /* Smooth transition */
+}
+
+.button:hover {
+  background-color: #333; /* Dark gray background color on hover */
+}
+
+/* Sub points styles */
+.sub_puntos {
+  width:  99.2%;
+  height:  10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub_puntos a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:  100%;
+  height:  100%;
+  text-decoration: none;
+  color: #000000; /* Dark text color */
+  transition: background-color  0.3s, color  0.3s; /* Smooth transition */
+}
+
+.sub_puntos a:hover {
+  background-color: #000000; /* Dark background color on hover */
+  color: #ffffff; /* White text color on hover */
+}
+
+/* Buttons styles */
+.botones {
+  width:  100%;
+  height:  80%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.botones button {
+  margin-left:  10px;
+  padding:  5px  10px;
+  border: none;
+  border-radius:  5px;
+  cursor: pointer;
+  transition: background-color  0.3s; /* Smooth transition */
+}
+
+.botones button:hover {
+  background-color: #000000; /* Dark background color on hover */
+  color: #ffffff; /* White text color on hover */
+}
+
+/* Table buttons styles */
+table button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: #000000; /* Black background color */
+  border-radius:  5px;
+  padding:  5px  10px;
+  cursor: pointer;
+}
+
+table button:hover {
+  background-color: #333; /* Dark gray background color on hover */
+  color: #ffffff; /* White text color on hover */
+}
+
+/* Table images styles */
+table img {
+  width:  20px;
+  height:  20px;
+  margin:  5px;
+}
+
+/* Additional botones styles */
+.botones {
+  width:  99%;
+  height:  10%;
+  margin:  5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+/* Data styles */
+.datos {
+  width:  100%;
+  height:  70%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  width:  30%;
+  height:  20%;
+  margin:  10px;
+}
+
+.campo input {
+  width:  100%;
+  height:  3em;
+  outline: none;
+}
+
+
+/* Estilos generales para los campos de entrada */
+input[type="text"], input[type="email"], input[type="password"], input[type="number"], input[type="date"], select {
+  width:  100%; /* Asegúrate de que el campo de entrada ocupe todo el ancho disponible */
+  padding:  10px; /* Espacio interior para facilitar la escritura */
+  margin:  5px  0; /* Espacio exterior para separar los campos */
+  box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+  border:  1px solid #ccc; /* Borde suave para enfocar y desenfocar */
+  border-radius:  4px; /* Bordes redondeados */
+  font-size:  16px; /* Tamaño de fuente legible */
+  transition: border-color  0.3s ease; /* Transición suave al cambiar el estado */
+}
+
+
+
+.hidden {
+  display: none;
+}
+
+
+select{outline: none;}

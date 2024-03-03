@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="info">
+      
+          <h2>Bienvenidos a WindowGold</h2>
+          <p>Si ya tienes una cuenta, por favor inicia sesion aquí</p>
+          <button class="boton boton2">iniciar sesion </button>
+      </div>
+  </div>
+  <div class="cuadroDeRegistro">
+      <div class="cuadro">
+        <h1><b style="color:#c9b715be ;">WindowGold</b></h1>
+          <h2>Crea una cuenta</h2>
+          <p>Crear una es gratis</p>
+
+          <form id="registrationForm">
+
+              <div class="inputs">
+                  <input type="text" class="name"  name="name" placeholder="nombre" required aria-label="Correo electrónico">  
+              </div>
+
+              <div class="inputs">
+                  <input type="text" class="apellido" placeholder="apellido" required aria-label="Correo electrónico">  
+              </div>
+
+              <div class="inputs">
+                  <input type="email"  class="email" name="email" id="emailInput" placeholder="Email" required aria-label="Correo electrónico">  
+              </div>
+
+              <div class="inputs">
+                  <input type="password" class="password" name="password" id="passwordInput" placeholder="Contraseña" required aria-label="Contraseña">
+              </div>
+
+              <div class="inputs">
+                  <input type="password" class="ContraseñaRepetida" placeholder="repetir Contraseña" required aria-label="Contraseña">
+              </div>
+
+              <button type="submit" class="boton  boton2" >registrarse</button>
+              <p class="responsiveRegistro">si tienes una cuenta <a href="/login" style="color: blue;">inicia sesion</a></p>
+          </form>
+          
+      </div>
+  </div>
+    <script type="module" src="./fetchAPI.js"></script>
+    <script type="module" src="./forn.js"></script>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>

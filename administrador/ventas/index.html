@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <div class="header">
+      <div class="logo">Gold</div>
+      <div class="contenidos">
+        <!-- Aquí he cambiado las rutas de los enlaces para que sean absolutas -->
+        <div class="puntos"><a href="/escritorio">Escritorio</a></div>
+        <div class="puntos  mas"><a href="#">Productos</a></div>
+        <div class="sub_puntos"><a href="/catalogo">catalogo</a></div>
+        <div class="sub_puntos"><a href="/articulos">articulos</a></div>
+        <div class="sub_puntos"><a href="/marcas">marcas</a></div>
+        <div class="puntos"><a href="/compras">compras</a></div>
+        <div class="puntos"><a href="/ventas">ventas</a></div>
+        <div class="puntos"><a href="#">consulta</a></div>
+      </div>
+    </div>
+  </header>
+  <main>
+    
+    <div class="barra">
+    </div>
+
+
+    <div class="busquedaYAgregar">
+      <!-- Aquí he agregado el atributo 'required' al campo de búsqueda -->
+     
+      <button class="button" id="crearProductoButton">Crear venta</button>
+    </div>
+    
+    <div class="main">
+      <table id="table">
+        <thead>
+          <tr>
+            <th>producto</th>
+            <th>id</th>
+            <th>cliente</th>
+            <th>nro de identidad</th>
+            
+           
+            <th>Cantidad por unidad</th>
+            <th>precio </th>
+            <th>total pagado</th>
+            
+            <th>moneda</th>
+            <th>fecha</th>
+            <th>Accion</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+  </main><!-- configurar modal para la venta -->
+    
+    <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">×</span>
+      <span>CREAR VENTA </span>
+      <hr>
+      <form id="productForm">
+        <div class="datos">
+          
+          <div class="campo">
+            <label>Nombre:</label>
+            <input type="text" name="nombreProducto" id="nombreProducto" placeholder="Ingrese el nombre del producto" class="nombreProducto" required>
+          </div>
+          <div class="campo">
+            <label>cliente</label>
+            <input type="text" name="nombreProducto"  placeholder="Ingrese el nombre del producto" class="proveedor" required>
+          </div>
+          
+          <div class="campo">
+            <label>Categoría:</label>
+            <select name="Categoria" id="Categoria" class="Categoria" >
+              <option value="" disabled selected>Seleccione...</option>
+             
+            </select>
+          </div>
+
+        
+          <div class="campo">
+            <label>Cantidad por unidad:</label>
+            <input type="text" name="cantidad" id="cantidad" placeholder="Ingrese la cantidad del producto" class="cantidad" required>
+          </div>
+          <div class="campo">
+            <label>Fecha:</label>
+            <input type="date" name="fecha" id="fecha" class="fecha" required>
+          </div>
+          <div class="campo">
+            <label>Precio Compra:</label>
+            <input type="text" name="PrecioCompra" id="PrecioCompra" placeholder="ingrese el precio de compra" class="PrecioCompra" required>
+          </div>
+          <div class="campo">
+            <label>IVA (%):</label>
+            <input type="number" name="iva" id="iva" placeholder="Ingrese el IVA" class="iva" required>
+          </div>
+          <div class="campo">
+            <label>Precio con IVA:</label>
+            <input type="text" name="precioConIva" id="precioConIva" placeholder="Precio con IVA" class="precioConIva" readonly style="margin:   5px;">
+            <button type="button" class="calcular">Calcular IVA</button>
+          </div>
+          <div class="campo">
+            <label>moneda:</label>
+            <select name="estado" id="moneda" class="moneda" required>
+              <option value="" disabled selected>moneda</option>
+              <option value="bolivares">Bs</option>
+              <option value="$">$</option>
+              <option value="€">€</option>
+            </select>
+          </div>
+          
+          <div class="botones">
+            <button type="submit" class="guardar">Guardar</button>
+            
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+  <script src="./index.js"></script>
+</body>
+</html>
+

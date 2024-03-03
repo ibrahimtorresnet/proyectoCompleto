@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <div class="header">
+      <div class="logo">Gold</div>
+      <div class="contenidos">
+        <div class="puntos"><a href="/escritorio">Escritorio</a></div>
+        <div class="puntos  mas"><a href="#">Productos</a></div>
+        <div class="sub_puntos"><a href="/catalogo">catalogo</a></div>
+        <div class="sub_puntos"><a href="/articulos">articulos</a></div>
+        <div class="sub_puntos"><a href="/marcas">marcas</a></div>
+        <div class="puntos"><a href="/compras">compras</a></div>
+        <div class="puntos"><a href="/ventas">ventas</a></div>
+        <div class="puntos"><a href="#">consulta</a></div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="barra"></div>
+    <div class="busquedaYAgregar">
+      <input type="text" placeholder="Busca el producto aquí" class="input">
+      <!-- Botón para abrir el modal de creación de productos -->
+      <button class="button" id="openModal">Crear producto</button>
+    </div>
+    <div class="main">
+      <table id="table">
+        <thead>
+          <th>Nombre</th>
+          <th>ID</th>
+          <th>Categoría</th>
+          <th>Código</th>
+          <th>Marca</th>
+          <th>Precio compra</th>
+          <th>Precio venta</th>
+          <th>moneda</th>
+          <th>Cantidad por unidad</th>
+          <th>Fecha</th>
+          <th>Estado</th>
+          <th>Acción</th>
+        </thead>
+      </table>
+    </div>
+  </main>
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">×</span>
+      <span>Crear producto</span>
+      <hr>
+      <form id="productForm">
+        <div class="datos">
+          <div class="campo">
+            <label>Nombre:</label>
+            <input type="text" name="nombreProducto" id="nombreProducto" placeholder="Ingrese el nombre del producto" class="nombreProducto" required>
+          </div>
+          <div class="campo">
+            <label>Código:</label>
+            <input type="text" name="codigoDelProducto" id="codigoDelProducto" placeholder="Ingrese el código del producto" class="codigoDelProducto" required>
+          </div>
+          <div class="campo">
+            <label>Marca:</label>
+            <input type="text" name="marca" id="marca" placeholder="Ingrese la marca del producto" class="marca" required>
+          </div>
+          <div class="campo">
+            <label>Categoría:</label>
+            <select name="Categoria" id="Categoria" class="Categoria" >
+              <option value="" disabled selected>Seleccione...</option>
+              <!-- Agrega más opciones aquí -->
+            </select>
+          </div>
+          <div class="campo">
+            <label>Precio compra:</label>
+            <input type="text" name="PrecioCompra" id="PrecioCompra" placeholder="Ingrese el precio de compra del producto" class="PrecioCompra" required>
+          </div>
+          <div class="campo">
+            <label>Precio venta:</label>
+            <input type="text" name="precioVenta" id="precioVenta" placeholder="Ingrese el precio de venta del producto" class="precioVenta" required>
+          </div>
+
+          <div class="campo">
+            <label>moneda:</label>
+            <select name="estado" id="moneda" class="moneda" required>
+              <option value="" disabled selected>moneda</option>
+              <option value="bolivares">Bs</option>
+              <option value="$">$</option>
+              <option value="€">€</option>
+            </select>
+          </div>
+        
+          <div class="campo">
+            <label>Cantidad:</label>
+            <input type="text" name="cantidad" id="cantidad" placeholder="Ingrese la cantidad del producto" class="cantidad" required>
+          </div>
+          <div class="campo">
+            <label>Fecha:</label>
+            <input type="date" name="fecha" id="fecha" class="fecha" required>
+          </div>
+          <div class="campo">
+            <label>Estado:</label>
+            <select name="estado" id="estado" class="estado" required>
+              <option value="" disabled selected>Seleccione...</option>
+              <option value="activo">Activo</option>
+              <option value="inactivo">Inactivo</option>
+            </select>
+          </div>
+        
+        <div class="botones">
+          <button type="submit" class="guardar">Guardar</button>
+          
+        </div>
+      </form>
+   
+    </div>
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
